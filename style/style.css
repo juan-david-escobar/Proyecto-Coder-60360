@@ -1,0 +1,126 @@
+/* Here I reset values and define the font for the entire page */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Here, I define the header style for all the website */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(8, 30, 77);
+    padding: 20px;
+    color: white;
+}
+
+.header__brand-link {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header__tagline {
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.header-nav {
+    margin-left: auto;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.header__nav-item {
+    margin-left: 20px;
+}
+
+.header__nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Section 1: Main Banner */
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.banner__content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner__content-heading,
+.banner__content-subheading,
+.banner__content-text {
+    color: white;
+}
+
+.banner__content-heading {
+    font-size: 40px;
+}
+
+.banner__content a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Section 2: Intro (Same style for sections 5, 6, 7, 8) */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+.intro__image {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin: 60px;
+}
+
+.intro>div {
+    max-width: 600px;
+    text-align: left;
+}
+
+.intro__heading {
+    font-size: 35px;
+    margin-bottom: 10px;
+}

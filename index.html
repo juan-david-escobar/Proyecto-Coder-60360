@@ -14,14 +14,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
     <title>Juan Escobar | Home</title>
-
 </head>
 
 <body>
+
     <!-- This is the header. -->
     <header class="header">
         <a href="./index.html" class="header__brand-link">Juan Escobar</a>
         <p class="header__tagline">Digital Communication</p>
+
+        <!-- This lines are for the Hamburguer Menu -->
+        <div class="hamburger-menu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+
+        <!-- This is the main navegation part -->
         <nav class="header-nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="./index.html">Home</a></li>
@@ -230,6 +239,13 @@
             <p class="footer-section__cellphone">Cellphone: +57 316 769 1179</p>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+          document.querySelector('.header-nav').classList.toggle('is-active');
+        });
+      </script>
+
 </body>
 
 </html>

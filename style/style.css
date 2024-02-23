@@ -1,4 +1,4 @@
-/* Here I reset values and define the font for the entire page */
+/* All devices = Here I reset values, define the font for the entire page and set images' width to the screen size width */
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +6,96 @@
     font-family: "Mulish", sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
+/* This is for the general header style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: rgb(8, 30, 77);
+}
+
+.header__brand-link {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.header__tagline {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Mobile = Here I define the Hamburguer menu */
+.hamburger-menu {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-menu .line {
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+}
+
+/* Mobile = Here I hide the navigation menu and style navigation menu */
+.header-nav {
+    display: none;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+}
+
+/* This is to show the menu when .is-active is added via JS */
+.header-nav.is-active {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .header-nav {
+        display: block;
+    }
+
+    .header__nav-list {
+        display: flex;
+    }
+
+    .header__nav-item {
+        margin-left: 20px;
+    }
+}
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
+}
+
 /* Here, I define the header style for all the website */
+/*
 .header {
     display: flex;
     justify-content: space-between;
@@ -46,8 +135,10 @@
     text-decoration: none;
     color: white;
 }
+*/
 
 /* Section 1: Main Banner */
+/*
 .banner {
     width: 100vw;
     height: 100vh;
@@ -97,8 +188,10 @@
     text-decoration: none;
     margin-top: 20px;
 }
+*/
 
 /* Section 2: Intro (Same style for sections 5, 6, 7, 8) */
+/*
 .intro {
     display: flex;
     align-items: center;
@@ -124,3 +217,4 @@
     font-size: 35px;
     margin-bottom: 10px;
 }
+*/

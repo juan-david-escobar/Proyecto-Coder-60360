@@ -7,8 +7,10 @@
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
+
+/* HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* This is for the general header style */
 .header {
@@ -30,9 +32,10 @@ img {
     color: white;
     font-size: 1rem;
     font-weight: 300;
+    justify-self: start;
 }
 
-/* Mobile = Here I define the Hamburguer menu */
+/* Header Mobile = Here I define the Hamburguer menu */
 .hamburger-menu {
     cursor: pointer;
     width: 30px;
@@ -48,7 +51,7 @@ img {
     background-color: #ffffff;
 }
 
-/* Mobile = Here I hide the navigation menu and style navigation menu */
+/* Header Mobile = Here I hide the navigation menu and style navigation menu */
 .header-nav {
     display: none;
 }
@@ -65,7 +68,7 @@ img {
     padding: 10px;
 }
 
-/* This is to show the menu when .is-active is added via JS */
+/* Header Mobile = This is to show the menu when .is-active is added via JS */
 .header-nav.is-active {
     display: block;
 }
@@ -88,66 +91,17 @@ img {
     }
 }
 
-.banner {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
-}
+/* FIRST SECTION: BANNER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* Here, I define the header style for all the website */
-/*
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(8, 30, 77);
-    padding: 20px;
-    color: white;
-}
-
-.header__brand-link {
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-}
-
-.header__tagline {
-    font-size: 17px;
-    font-weight: 100;
-    margin-left: 10px;
-}
-
-.header-nav {
-    margin-left: auto;
-}
-
-.header__nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.header__nav-item {
-    margin-left: 20px;
-}
-
-.header__nav-item a {
-    text-decoration: none;
-    color: white;
-}
-*/
-
-/* Section 1: Main Banner */
-/*
 .banner {
     width: 100vw;
     height: 100vh;
     background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: center;
     position: relative;
 }
 
@@ -165,56 +119,201 @@ img {
 .banner__content {
     position: relative;
     z-index: 2;
-    text-align: left;
-    max-width: 1200px;
+    text-align: center;
     margin: 0 auto;
-}
-
-.banner__content-heading,
-.banner__content-subheading,
-.banner__content-text {
-    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    /* max-width: 1200px; */
 }
 
 .banner__content-heading {
-    font-size: 40px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.banner__content-subheading {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.banner__content-text {
+    color: white;
+    font-size: 0.9rem;
 }
 
 .banner__content a {
     display: inline-block;
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-decoration: none;
     margin-top: 20px;
+    width: 120px;
 }
-*/
 
-/* Section 2: Intro (Same style for sections 5, 6, 7, 8) */
-/*
+@media screen and (min-width: 768px) {
+    .banner {
+        align-items: center;
+    }
+}
+
+/* SECOND SECTION: INTRODUCTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .intro {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    gap: 40px;
+    flex-direction: column;
+    text-align: center;
+    margin: 60px;
+    gap: 20px;
 }
 
 .intro__image {
-    width: 40%;
-    max-width: 400px;
-    height: auto;
-    object-fit: cover;
-    margin: 60px;
+    order: 2;
 }
 
-.intro>div {
-    max-width: 600px;
-    text-align: left;
+.intro__text {
+    order: 1;
+    margin-bottom: 30px;
 }
 
 .intro__heading {
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
 }
-*/
+
+.intro__subheading {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.intro__text {
+    font-size: 1rem;
+    font-weight: 250;
+}
+
+@media screen and (min-width: 768px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .intro__heading {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .intro__subheading {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .intro__image {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    .intro__heading {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .intro__subheading {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .intro__text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+}
+
+/* THIRD SECTION: QUOTE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.quote {
+    margin: 50px;
+    font-family: sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+}
+
+.quote__author {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* FOURTH SECTION: ARTICLES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.articles-section {
+    background-color: #bababb;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.articles-section__article {
+    background-color: #ECEDEC;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Section four: Tablet */
+@media screen and (min-width: 768px) {
+    .articles-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .articles-section__heading {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .articles-section__subheading {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .articles-section__text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+/* Section four: Desktop */
+@media screen and (min-width: 1024px) {
+    .articles-section {
+        padding: 100px;
+    }
+
+    .articles-section__article {
+        margin: 50px;
+    }

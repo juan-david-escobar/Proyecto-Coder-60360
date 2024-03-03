@@ -10,9 +10,9 @@ img {
     max-width: 100%;
 }
 
-/* HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/* This is for the general header style */
+/* Header: This is for the general style */
 .header {
     display: flex;
     justify-content: space-between;
@@ -68,11 +68,12 @@ img {
     padding: 10px;
 }
 
-/* Header Mobile = This is to show the menu when .is-active is added via JS */
+/* Header tablet, desktop = This is to show the menu when .is-active is added via JS */
 .header-nav.is-active {
     display: block;
 }
 
+/* Header Tablet and Desktop */
 @media screen and (min-width: 768px) {
     .hamburger-menu {
         display: none;
@@ -91,8 +92,9 @@ img {
     }
 }
 
-/* FIRST SECTION: BANNER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* FIRST SECTION: BANNER >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* First Section Banner Mobile */
 .banner {
     width: 100vw;
     height: 100vh;
@@ -127,7 +129,6 @@ img {
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
-    /* max-width: 1200px; */
 }
 
 .banner__content-heading {
@@ -157,28 +158,25 @@ img {
     width: 120px;
 }
 
+/* First Section Tablet */
 @media screen and (min-width: 768px) {
     .banner {
         align-items: center;
     }
 }
 
-/* SECOND SECTION: INTRODUCTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* SECOND SECTION: INTRODUCTION >>>>>>>>>>>>>>>>>>>>>> */
 
+/* Second Section introduction Mobile */
 .intro {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 60px;
+    margin: 150px 80px;
     gap: 20px;
 }
 
-.intro__image {
-    order: 2;
-}
-
 .intro__text {
-    order: 1;
     margin-bottom: 30px;
 }
 
@@ -197,6 +195,7 @@ img {
     font-weight: 250;
 }
 
+/* Second Section introduction Tablet */
 @media screen and (min-width: 768px) {
     .intro {
         display: grid;
@@ -217,6 +216,7 @@ img {
     }
 }
 
+/* Second Section introduction Desktop */
 @media screen and (min-width: 1024px) {
     .intro {
         display: grid;
@@ -250,8 +250,9 @@ img {
 
 }
 
-/* THIRD SECTION: QUOTE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* THIRD SECTION: QUOTE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* Third Section Quote Mobile, Tablet and Desktop */
 .quote {
     margin: 50px;
     font-family: sans-serif;
@@ -265,8 +266,9 @@ img {
     margin-top: 20px;
 }
 
-/* FOURTH SECTION: ARTICLES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* FOURTH SECTION: ARTICLES >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* Four Section Articles Mobile */
 .articles-section {
     background-color: #bababb;
     padding: 70px;
@@ -285,7 +287,7 @@ img {
     gap: 20px;
 }
 
-/* Section four: Tablet */
+/* Four Section Articles Tablet */
 @media screen and (min-width: 768px) {
     .articles-section {
         display: grid;
@@ -308,7 +310,7 @@ img {
     }
 }
 
-/* Section four: Desktop */
+/* Four Section Articles Desktop */
 @media screen and (min-width: 1024px) {
     .articles-section {
         padding: 100px;
@@ -317,3 +319,34 @@ img {
     .articles-section__article {
         margin: 50px;
     }
+}
+
+/* FIFTH to EIGHTH SECTION: ABOUT, CAREER, COACH, DEVELOPER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Fifth Section About Mobile */
+.intro__button {
+    background-color: #0071BC;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 30px;
+    width: 120px;
+    align-self: center;
+}
+
+/* Problema con el botón para tablet y desktop: no centra */
+@media screen and (min-width: 768px) {
+    .intro__button {
+        justify-self: center;
+        grid-column: 1/3;
+    }
+}
+
+/* NINETH SECTION: FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Nineth Section Form Mobile */
+.contact-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,10 +1,10 @@
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Mulish", sans-serif;
-}
+@import "base";
 
-img {
-      max-width: 100%;
-}
+@import "Components/botones";
+@import "Components/footer";
+@import "Components/header";
+
+@import "Pages/about";
+@import "Pages/career";
+@import "Pages/coach";
+@import "Pages/developer"

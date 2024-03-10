@@ -29,6 +29,11 @@ $text-font-weight: 400;
 $bratsee_dark_blue: #11206f;
 $bratsee_light_blue: #3e7fe0;
 $bratsee_green: rgb(137, 214, 36);
-$bratsee_dark_gray: rgb(99, 99, 99);
-$bratsee_light_gray: rgb(203, 203, 203);
+$bratsee_dark_gray: rgb(188, 187, 187);
+$bratsee_light_gray: rgb(224, 223, 223);
 $bratsee_white: rgb(255, 255, 255);
+
+// Responsive Padding
+$padding_cellphone: 80px 40px;
+$padding_tablet: 120px 80px;
+$padding_desktop: 120px 200px;

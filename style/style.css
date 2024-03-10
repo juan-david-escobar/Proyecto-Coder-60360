@@ -170,6 +170,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .intro {
+    padding: 120px 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -186,6 +187,9 @@ img {
   }
 }
 @media screen and (min-width: 1024px) {
+  .intro {
+    padding: 120px 200px;
+  }
   .intro .intro__image {
     order: 1;
     max-width: 450px;
@@ -214,22 +218,55 @@ img {
   font-weight: 800;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .quote {
+    padding: 120px 80px;
+  }
+}
 @media screen and (min-width: 1024px) {
-  .quote .quote {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+  .quote {
+    padding: 120px 200px;
   }
-  .quote .quote__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+}
+
+/* SECTION 4 = ARTICLES/CARDS */
+.articles-section {
+  padding: 80px 40px;
+  background-color: rgb(188, 187, 187);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.articles-section .articles-section__article {
+  background-color: rgb(224, 223, 223);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .articles-section {
+    padding: 120px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  .quote .quote__text {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
+  .articles-section .articles-section__heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .articles-section .articles-section__subheading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .articles-section .articles-section__text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .articles-section {
+    padding: 120px 200px;
   }
 }
 

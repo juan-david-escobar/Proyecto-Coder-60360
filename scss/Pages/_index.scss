@@ -66,7 +66,7 @@
 
 /* SECTION 2 = INTRODUCTION */
 .intro {
-      padding: 80px 40px;
+      padding: $padding_cellphone;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -77,6 +77,7 @@
       }
 
       @media screen and (min-width: 768px) {
+            padding: $padding_tablet;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
@@ -95,6 +96,9 @@
       }
 
       @media screen and (min-width: 1024px) {
+            padding: $padding_desktop;
+
+
             .intro__image {
                   order: 1;
                   max-width: 450px;
@@ -114,7 +118,7 @@
 
 /* SECTION 3 = QUOTE */
 .quote {
-      padding: 80px 40px;
+      padding: $padding_cellphone;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       text-align: justify;
 
@@ -127,24 +131,55 @@
             text-align: center;
       }
 
+      @media screen and (min-width: 768px) {
+            padding: $padding_tablet;
+      }
+
       @media screen and (min-width: 1024px) {
-            .quote {
-                  display: flex;
-                  flex-direction: column;
-                  align-content: center;
+            padding: $padding_desktop;
+      }
+}
+
+/* SECTION 4 = ARTICLES/CARDS */
+.articles-section {
+      padding: $padding_cellphone;
+      background-color: $bratsee_dark_gray;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      gap: 20px;
+      text-align: center;
+
+      .articles-section__article {
+            background-color: $bratsee_light_gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+      }
+
+      @media screen and (min-width: 768px) {
+            padding: $padding_tablet;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .articles-section__heading {
+                  grid-column-start: 1;
+                  grid-column-end: 3;
             }
 
-            .quote__block {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  margin-bottom: 20px;
+            .articles-section__subheading {
+                  grid-column-start: 1;
+                  grid-column-end: 3;
             }
 
-            .quote__text {
-                  max-width: 600px;
-                  margin: auto;
-                  text-align: center;
+            .articles-section__text {
+                  grid-column-start: 1;
+                  grid-column-end: 3;
             }
+      }
+
+      @media screen and (min-width: 1024px) {
+            padding: $padding_desktop;
       }
 }

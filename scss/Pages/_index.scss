@@ -63,3 +63,16 @@
             justify-content: flex-start;
       }
 }
+
+/* SECTION 2 = Introduction */
+.intro {
+      padding: 80px 40px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+
+      .intro__text {
+            text-align: justify;
+      }
+}

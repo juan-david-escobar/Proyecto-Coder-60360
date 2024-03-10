@@ -5,25 +5,11 @@
       box-sizing: border-box;
 }
 
-// Typography
-$body-font-family: 'Mulish', sans-serif;
-$heading-font-weight: 700;
-$text-font-weight: 400;
-
+// General Styles
 body {
-      font-family: $body-font-family;
-      font-weight: $text-font-weight;
+      font-family: sans-serif;
 }
 
-// Color Palette
-$bratsee_dark_blue: #11206f;
-$bratsee_light_blue: #3e7fe0;
-$bratsee_green: rgb(137, 214, 36);
-$bratsee_dark_gray: rgb(99, 99, 99);
-$bratsee_light_gray: rgb(203, 203, 203);
-$bratsee_white: rgb(255, 255, 255);
-
-// General Styles
 a {
       text-decoration: none;
 }
@@ -33,3 +19,16 @@ img {
       max-width: 100%;
       height: auto;
 }
+
+// Typography
+$body-font-family: 'Mulish', sans-serif;
+$heading-font-weight: 700;
+$text-font-weight: 400;
+
+// Color Palette
+$bratsee_dark_blue: #11206f;
+$bratsee_light_blue: #3e7fe0;
+$bratsee_green: rgb(137, 214, 36);
+$bratsee_dark_gray: rgb(99, 99, 99);
+$bratsee_light_gray: rgb(203, 203, 203);
+$bratsee_white: rgb(255, 255, 255);

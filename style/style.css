@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
+  font-family: sans-serif;
 }
 
 a {
@@ -87,12 +86,12 @@ img {
   font-weight: 700;
 }
 .subheading {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 .text {
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 0.9rem;
+  font-weight: 100;
 }
 /* SECTION 1 = Banner with H1 */
 .banner {
@@ -152,6 +151,17 @@ img {
     align-items: center;
     justify-content: flex-start;
   }
+}
+/* SECTION 2 = Introduction */
+.intro {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.intro .intro__text {
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

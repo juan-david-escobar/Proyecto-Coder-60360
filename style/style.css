@@ -93,7 +93,12 @@ img {
   font-size: 0.9rem;
   font-weight: 100;
 }
-/* SECTION 1 = Banner with H1 */
+.paragraph {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 25px;
+}
+/* SECTION 1 = BANNER WITH H1 */
 .banner {
   width: 100vw;
   height: 100vh;
@@ -152,7 +157,7 @@ img {
     justify-content: flex-start;
   }
 }
-/* SECTION 2 = Introduction */
+/* SECTION 2 = INTRODUCTION */
 .intro {
   padding: 80px 40px;
   display: flex;
@@ -162,6 +167,70 @@ img {
 }
 .intro .intro__text {
   text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .intro .intro__heading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .intro .intro__subheading {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .intro .intro__image {
+    order: 1;
+    max-width: 450px;
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+  }
+  .intro .intro__text {
+    order: 2;
+    max-width: 400px;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/* SECTION 3 = QUOTE */
+.quote {
+  padding: 80px 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+.quote .quote__text {
+  margin-bottom: 15px;
+}
+.quote .quote__author {
+  font-weight: 800;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .quote .quote {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .quote .quote__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .quote .quote__text {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

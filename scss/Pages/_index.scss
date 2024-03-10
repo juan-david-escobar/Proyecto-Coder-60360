@@ -1,3 +1,4 @@
+/* SECTION 1 = Banner with H1 */
 .banner {
       width: 100vw;
       height: 100vh;
@@ -54,10 +55,11 @@
             margin-top: 20px;
             width: 120px;
       }
+}
 
-      @media screen and (min-width: 768px) {
-            .banner {
-                  align-items: center;
-            }
+@media screen and (min-width: 768px) {
+      .banner {
+            align-items: center;
+            justify-content: flex-start;
       }
 }

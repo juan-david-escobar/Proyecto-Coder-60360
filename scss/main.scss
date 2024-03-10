@@ -1,10 +1,15 @@
 @import "base";
 
 @import "Components/botones";
+@import "Components/card";
 @import "Components/footer";
+@import "Components/form";
 @import "Components/header";
+@import "Components/navbar";
+@import "Components/typography";
 
+@import "Pages/index";
 @import "Pages/about";
 @import "Pages/career";
 @import "Pages/coach";
-@import "Pages/developer"
+@import "Pages/developer";

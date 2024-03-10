@@ -82,5 +82,73 @@ img {
     display: none;
   }
 }
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.subheading {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.text {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+.banner .banner__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.banner .banner__content-heading {
+  color: rgb(255, 255, 255);
+}
+.banner .banner__content-subheading {
+  color: rgb(255, 255, 255);
+}
+.banner .banner__content-text {
+  color: rgb(255, 255, 255);
+}
+.banner .banner__content a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-top: 20px;
+  width: 120px;
+}
+@media screen and (min-width: 768px) {
+  .banner .banner {
+    align-items: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

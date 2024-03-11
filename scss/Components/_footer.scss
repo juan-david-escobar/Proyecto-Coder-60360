@@ -1,0 +1,47 @@
+.footer {
+      padding: $padding_cellphone;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      background-color: $bratsee_dark_blue;
+
+      .footer-section {
+            color: $bratsee_white;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+      }
+
+      .footer-section__brand-link {
+            color: $bratsee_white;
+            font-size: 1.5rem;
+      }
+
+      .footer-section__linkedin-image {
+            max-width: 50px;
+            margin: 10px 0px;
+      }
+
+      .footer-section__copyright {
+            margin: 20px 0px;
+      }
+
+      @media screen and (min-width: $breakpoint_tablet) {
+            padding: $padding_tablet;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+      }
+
+      @media screen and (min-width: $breakpoint_desktop) {
+            padding: $padding_desktop;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+      }
+}

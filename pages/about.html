@@ -17,10 +17,20 @@
 </head>
 
 <body>
+    
     <!-- This is the header. -->
     <header class="header">
         <a href="../index.html" class="header__brand-link">Juan Escobar</a>
         <p class="header__tagline">Digital Communication</p>
+
+        <!-- These lines are for the Hamburguer Menu -->
+        <div class="hamburger-menu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+
+        <!-- This is the main navegation part -->
         <nav class="header-nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="../index.html">Home</a></li>
@@ -32,44 +42,7 @@
         </nav>
     </header>
 
-    <main>
-        <!-- This is Section 1 = BANNER -->
-        <section class="banner">
-            <div class="banner__content">
-                <h1 class="banner__content-heading heading">My Story</h1>
-                <h2 class="banner__content-subheading subheading">A little bit of who I am</h2>
-                <p class="banner__content-text text">Learn more about my passion for development</p>
-                <a href="./pages/developer.html" class="banner__content-button button">Let's Go!</a>
-            </div>
-        </section>
 
-        <section>
-
-        </section>
-    </main>
-
-    <!-- This is the footer -->
-    <footer class="footer">
-        <!-- This is the first section of the footer: Name and LinkedIn link -->
-        <div class="footer-section">
-            <a href="../index.html" class="footer-section__brand-link">Juan Escobar</a>
-            <p class="footer-section__linkedin">Check out my LinkedIn profile</p>
-            <a href="https://www.linkedin.com/in/juan-david-escobar-rincon"><img src="../images/linkedIn_icon.png"
-                    alt="Visit my LinkedIn profile" class="footer-section__linkedin-image"></a>
-        </div>
-
-        <!-- This is the second section of the footer -->
-        <div class="footer-section">
-            <p class="footer-section__contact-title">Contact Me!</p>
-            <p class="footer-section__email">Email: juan8619@hotmail.com</p>
-            <p class="footer-section__cellphone">Cellphone: +57 316 769 1179</p>
-        </div>
-
-        <!-- This is the third section of the footer -->
-        <div class="footer-section">
-            <p class="footer-section__copyright text">© 2024 Juan Escobar</p>
-        </div>
-    </footer>
 
     <script>
         document.querySelector('.hamburger-menu').addEventListener('click', function() {

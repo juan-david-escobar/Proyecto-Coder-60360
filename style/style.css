@@ -199,6 +199,10 @@ img {
   color: rgb(255, 255, 255);
 }
 
+.banner_about {
+  background-image: url(/images/juan_escobar_about.jpg);
+}
+
 @media screen and (min-width: 768px) {
   .banner {
     align-items: center;
@@ -408,6 +412,50 @@ img {
   .contact-section .contact-form .label {
     text-align: right;
   }
+}
+
+/* SECTION 1 = BANNER WITH H1 */
+.banner_about {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../images/juan_escobar_about.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.banner_about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+.banner_about .banner_about__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.banner_about .banner_about__content-heading,
+.banner_about .banner_about__content-subheading,
+.banner_about .banner_about__content-text {
+  color: rgb(255, 255, 255);
+}
+
+.banner_about__content-button {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

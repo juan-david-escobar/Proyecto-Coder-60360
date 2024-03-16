@@ -1,3 +1,74 @@
+/* SECTION 1 = BANNER WITH H1 */
+.banner {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
+      background-size: cover;
+      background-position: top;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+
+      &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            z-index: 1;
+      }
+
+      .banner__content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 20px;
+      }
+
+      .banner__content-heading {
+            color: $bratsee_white;
+      }
+
+      .banner__content-subheading {
+            color: $bratsee_white;
+      }
+
+      .banner__content-text {
+            color: $bratsee_white;
+      }
+
+      // .banner__content a {
+      //       display: inline-block;
+      //       background-color: #007bff;
+      //       color: white;
+      //       padding: 10px 10px;
+      //       text-decoration: none;
+      //       margin-top: 20px;
+      //       width: 120px;
+      // }
+}
+
+.banner_about {
+      background-image: url(/images/juan_escobar_about.jpg);
+}
+
+@media screen and (min-width: $breakpoint_tablet) {
+      .banner {
+            align-items: center;
+            justify-content: flex-start;
+      }
+}
+
+
 /* SECTION 2 = INTRODUCTION */
 .intro {
       padding: $padding_cellphone;

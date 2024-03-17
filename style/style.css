@@ -449,13 +449,25 @@ img {
   margin-bottom: 20px;
 }
 .banner_about .banner_about__content-heading,
-.banner_about .banner_about__content-subheading,
+.banner_about .banner_about__content-subheading {
+  color: rgb(255, 255, 255);
+}
 .banner_about .banner_about__content-text {
   color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
 .banner_about__content-button {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .banner_about {
+    align-items: center;
+  }
+}
+.quote {
+  background-color: rgb(224, 223, 223);
 }
 
 /*# sourceMappingURL=style.css.map */

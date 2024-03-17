@@ -35,12 +35,26 @@
       }
 
       .banner_about__content-heading,
-      .banner_about__content-subheading,
+      .banner_about__content-subheading {
+            color: $bratsee_white;
+      }
+
       .banner_about__content-text {
             color: $bratsee_white;
+            margin-bottom: 30px;
       }
 }
 
 .banner_about__content-button {
       display: none;
+}
+
+@media screen and (min-width: 768px) {
+      .banner_about {
+            align-items: center;
+      }
+}
+
+.quote {
+      background-color: $bratsee_light_gray;
 }

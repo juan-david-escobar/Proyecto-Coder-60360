@@ -17,10 +17,19 @@
 </head>
 
 <body>
-    <!-- This is the header. -->
+    <!-- HEADER -->
     <header class="header">
         <a href="../index.html" class="header__brand-link">Juan Escobar</a>
         <p class="header__tagline">Digital Communication</p>
+
+        <!-- Hamburguer Menu Lines -->
+        <div class="hamburger-menu">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+
+        <!-- Main Navegation Part -->
         <nav class="header-nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item"><a href="../index.html">Home</a></li>
@@ -31,6 +40,28 @@
             </ul>
         </nav>
     </header>
+
+    <!-- MAIN BANNER -->
+    <main>
+        <section class="banner_coach">
+            <div class="banner_coach__content">
+                <h1 class="banner_coach__content-heading heading">My Story</h1>
+                <h2 class="banner_coach__content-subheading subheading">A little bit of who I am</h2>
+                <p class="banner_coach__content-text text">Discover the journey behind my coding passion and creativity.</p>
+                <a href="../pages/developer.html" class="banner_coach__content-button button">Let's Go!</a>
+            </div>
+        </section>
+
+
+
+
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+          document.querySelector('.header-nav').classList.toggle('is-active');
+        });
+    </script>
+
 </body>
 
 </html>

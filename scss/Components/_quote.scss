@@ -1,0 +1,23 @@
+/* SECTION 3 = QUOTE */
+.quote {
+      padding: $padding_cellphone;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: justify;
+
+      .quote__text {
+            margin-bottom: 15px;
+      }
+
+      .quote__author {
+            font-weight: 800;
+            text-align: center;
+      }
+
+      @media screen and (min-width: $breakpoint_tablet) {
+            padding: $padding_tablet;
+      }
+
+      @media screen and (min-width: $breakpoint_desktop) {
+            padding: $padding_desktop;
+      }
+}

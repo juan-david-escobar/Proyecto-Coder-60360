@@ -1,0 +1,88 @@
+// Card1 = Card with no button
+.card1 {
+      padding: $padding_cellphone;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+      // border-bottom: solid $bratsee_dark_gray 2px;
+
+      .card1__text {
+            text-align: justify;
+      }
+
+      @media screen and (min-width: $breakpoint_tablet) {
+            padding: $padding_tablet;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+
+            .card1__heading {
+                  grid-column-start: 1;
+                  grid-column-end: 3;
+                  grid-row-start: 1;
+                  grid-row-end: 2;
+            }
+
+            .card1__subheading {
+                  grid-column-start: 1;
+                  grid-column-end: 3;
+                  grid-row-start: 2;
+                  grid-row-end: 3;
+            }
+
+            .card1__text {
+                  grid-column-start: 1;
+                  grid-column-end: 2;
+                  grid-row-start: 3;
+                  grid-row-end: 4;
+            }
+
+            .card1__image {
+                  grid-column-start: 2;
+                  grid-column-end: 3;
+                  grid-row-start: 3;
+                  grid-row-end: 4;
+            }
+      }
+
+      @media screen and (min-width: $breakpoint_desktop) {
+            padding: $padding_desktop;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+
+            .card1__heading {
+                  grid-column-start: 2;
+                  grid-column-end: 3;
+                  grid-row-start: 1;
+                  grid-row-end: 2;
+            }
+
+            .card1__subheading {
+                  grid-column-start: 2;
+                  grid-column-end: 3;
+                  grid-row-start: 2;
+                  grid-row-end: 3;
+            }
+
+            .card1__text {
+                  grid-column-start: 2;
+                  grid-column-end: 3;
+                  grid-row-start: 3;
+                  grid-row-end: 4;
+            }
+
+            .card1__image {
+                  grid-column-start: 1;
+                  grid-column-end: 2;
+                  grid-row-start: 1;
+                  grid-row-end: 4;
+            }
+      }
+}

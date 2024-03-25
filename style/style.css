@@ -27,6 +27,9 @@ img {
   margin: 15px;
   cursor: pointer;
 }
+.button:hover {
+  transform: scale(1.1);
+}
 
 .card1 {
   padding: 80px 40px;

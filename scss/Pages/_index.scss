@@ -2,7 +2,7 @@
 .banner {
       width: 100vw;
       height: 100vh;
-      background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
+      background-image: url(/images/Juan_Escobar_Web_Development_Main_Banner.jpg);
       background-size: cover;
       background-position: top;
       display: flex;
@@ -11,7 +11,7 @@
       position: relative;
 
       &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -34,27 +34,24 @@
             margin-bottom: 20px;
       }
 
-      .banner__content-heading {
-            color: $bratsee_white;
-      }
-
+      .banner__content-heading,
       .banner__content-subheading {
             color: $bratsee_white;
       }
 
       .banner__content-text {
             color: $bratsee_white;
+            margin-bottom: 30px;
       }
 }
 
-.banner_about {
-      background-image: url(/images/juan_escobar_about.jpg);
+.banner__content-button {
+      display: none;
 }
 
-@media screen and (min-width: $breakpoint_tablet) {
+@media screen and (min-width: 768px) {
       .banner {
             align-items: center;
-            justify-content: flex-start;
       }
 }
 

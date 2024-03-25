@@ -545,7 +545,7 @@ img {
 .banner {
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/Juan_Escobar_Web_Development_Main_Banner.jpg);
+  background-image: url(/images/Juan_Escobar_Web_Development_Main_Banner.jpg);
   background-size: cover;
   background-position: top;
   display: flex;
@@ -575,24 +575,22 @@ img {
   gap: 15px;
   margin-bottom: 20px;
 }
-.banner .banner__content-heading {
-  color: rgb(255, 255, 255);
-}
+.banner .banner__content-heading,
 .banner .banner__content-subheading {
   color: rgb(255, 255, 255);
 }
 .banner .banner__content-text {
   color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 
-.banner_about {
-  background-image: url(/images/juan_escobar_about.jpg);
+.banner__content-button {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .banner {
     align-items: center;
-    justify-content: flex-start;
   }
 }
 /* SECTION 4 = ARTICLES/CARDS */
@@ -687,7 +685,7 @@ img {
 .banner_about {
   width: 100vw;
   height: 100vh;
-  background-image: url(../../images/juan_escobar_about.jpg);
+  background-image: url(/images/juan_escobar_about.jpg);
   background-size: cover;
   background-position: top;
   display: flex;

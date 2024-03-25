@@ -61,19 +61,18 @@
 /* SECTION 4 = ARTICLES/CARDS */
 .articles-section {
       padding: $padding_cellphone;
-      background-color: $bratsee_dark_gray;
+      background-color: $bratsee_light_gray;
       display: flex;
       flex-direction: column;
-      // align-items: center;
       gap: 20px;
       text-align: center;
 
       .articles-section__article {
-            background-color: $bratsee_light_gray;
-            padding: 20px;
+            background-color: $bratsee_light_blue;
+            padding: 40px;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
       }
 
       @media screen and (min-width: $breakpoint_tablet) {

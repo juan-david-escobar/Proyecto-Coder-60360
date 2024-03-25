@@ -45,6 +45,11 @@
             display: block;
             padding: 5px;
             color: $bratsee_white;
+
+            &:hover {
+                  transform: scale(1.1);
+                  color: $bratsee_green;
+            }
       }
 
       .header-nav.is-active {

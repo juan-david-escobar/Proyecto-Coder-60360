@@ -489,6 +489,10 @@ img {
   padding: 5px;
   color: rgb(255, 255, 255);
 }
+.header .header-nav ul li a:hover {
+  transform: scale(1.1);
+  color: rgb(137, 214, 36);
+}
 .header .header-nav.is-active {
   display: block;
 }
